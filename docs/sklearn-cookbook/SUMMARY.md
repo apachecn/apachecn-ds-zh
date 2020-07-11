@@ -1,4 +1,4 @@
-+ [Scikit-learn 秘籍](README.md)
++ [Sklearn 秘籍](README.md)
 + [第一章 模型预处理](1.md)
 + [第二章 处理线性模型](2.md)
 + [第三章 使用距离向量构建模型](3.md)

@@ -1,4 +1,4 @@
-# Scikit-learn 秘籍
+# Sklearn 秘籍
 
 > 原书：[Scikit-learn Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/scikit-learn-cookbook)
 > 
