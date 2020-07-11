@@ -1,3 +1,3 @@
-# ApacheCN 数据分析译文集
+# ApacheCN 数据科学译文集
 
 （施工中）
