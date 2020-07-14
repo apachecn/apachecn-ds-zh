@@ -26,7 +26,7 @@
     +   [数据选择](docs/master-exp-analysis-pandas/2.md)
     +   [处理，转换和重塑数据](docs/master-exp-analysis-pandas/3.md)
     +   [像专业人士一样可视化数据](docs/master-exp-analysis-pandas/4.md)
-+ [Sklearn 秘籍](docs/sklearn-cookbook/README.md)
++   [Sklearn 秘籍](docs/sklearn-cookbook/README.md)
     +   [第一章 模型预处理](docs/sklearn-cookbook/1.md)
     +   [第二章 处理线性模型](docs/sklearn-cookbook/2.md)
     +   [第三章 使用距离向量构建模型](docs/sklearn-cookbook/3.md)
