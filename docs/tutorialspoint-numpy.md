@@ -48,7 +48,7 @@ NumPy 是开源的，这是它的一个额外的优势。
 > 
 > 使用我们的在线编译器尝试一下示例，它位于 [CodingGround](https://www.tutorialspoint.com/codingground.htm)
 > 
-> ```
+> ```py
 > import numpy as np 
 > a =  'hello world'  
 > print a
@@ -58,7 +58,7 @@ NumPy 是开源的，这是它的一个额外的优势。
 
 标准的 Python 发行版不会与 NumPy 模块捆绑在一起。 一个轻量级的替代方法是使用流行的 Python 包安装程序 **pip** 来安装 NumPy。
 
-```
+```py
 pip install numpy
 
 ```
@@ -79,7 +79,7 @@ Linux 发行版的相应软件包管理器可用于安装一个或多个 SciPy �
 
 ###  对于 Ubuntu
 
-```
+```py
 sudo apt-get install python-numpy 
 python-scipy python-matplotlibipythonipythonnotebook python-pandas 
 python-sympy python-nose
@@ -88,7 +88,7 @@ python-sympy python-nose
 
 ###  对于 Fedora
 
-```
+```py
 sudo yum install numpyscipy python-matplotlibipython 
 python-pandas sympy python-nose atlas-devel
 
@@ -102,7 +102,7 @@ GNU gcc（4.2及以上）C 编译器必须可用。
 
 要安装 NumPy，请运行以下命令。
 
-```
+```py
 Python setup.py install
 
 ```
@@ -112,7 +112,7 @@ Python setup.py install
 如果未安装，将显示以下错误消息。
 
 
-```
+```py
 Traceback (most recent call last): 
    File "<pyshell#0>", line 1, in <module> 
       import numpy 
@@ -131,7 +131,7 @@ ImportError: No module named 'numpy'
 
 ###  示例 1
 
-```
+```py
 import numpy as np 
 
 a = np.array([1,2,3,4]) 
@@ -142,7 +142,7 @@ print c
 
 输出如下：
 
-```
+```py
 [10   40   90   160]
 
 ```
@@ -171,7 +171,7 @@ print c
 
 ###  示例 2
 
-```
+```py
 import numpy as np 
 a = np.array([[0.0,0.0,0.0],[10.0,10.0,10.0],[20.0,20.0,20.0],[30.0,30.0,30.0]]) 
 b = np.array([1.0,2.0,3.0])  
@@ -187,7 +187,7 @@ print a + b
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[ 0. 0. 0.]
  [ 10. 10. 10.]
@@ -219,7 +219,7 @@ NumPy 包包含一个迭代器对象`numpy.nditer`。 它是一个有效的多�
 
 ### # 示例 1
 
-```
+```py
 import numpy as np
 a = np.arange(0,60,5) 
 a = a.reshape(3,4)  
@@ -232,7 +232,7 @@ for x in np.nditer(a):
 
 输出如下：
 
-```
+```py
 原始数组是：
 [[ 0 5 10 15]
  [20 25 30 35]
@@ -247,7 +247,7 @@ for x in np.nditer(a):
 
 迭代的顺序匹配数组的内容布局，而不考虑特定的排序。 这可以通过迭代上述数组的转置来看到。
 
-```
+```py
 import numpy as np 
 a = np.arange(0,60,5) 
 a = a.reshape(3,4)  
@@ -265,7 +265,7 @@ for x in np.nditer(b):
 
 输出如下：
 
-```
+```py
 原始数组是：
 [[ 0 5 10 15]
  [20 25 30 35]
@@ -288,7 +288,7 @@ for x in np.nditer(b):
 
 ### # 示例 1
 
-```
+```py
 import numpy as np
 a = np.arange(0,60,5) 
 a = a.reshape(3,4)  
@@ -312,7 +312,7 @@ for x in np.nditer(c):
 
 输出如下：
 
-```
+```py
 原始数组是：
 [[ 0 5 10 15]
  [20 25 30 35]
@@ -344,7 +344,7 @@ for x in np.nditer(c):
 
 可以通过显式提醒，来强制`nditer`对象使用某种顺序：
 
-```
+```py
 import numpy as np 
 a = np.arange(0,60,5) 
 a = a.reshape(3,4)  
@@ -362,7 +362,7 @@ for x in np.nditer(a, order =  'F'):
 
 输出如下：
 
-```
+```py
 原始数组是：
 [[ 0 5 10 15]
  [20 25 30 35]
@@ -382,7 +382,7 @@ for x in np.nditer(a, order =  'F'):
 
 ### # 示例
 
-```
+```py
 import numpy as np
 a = np.arange(0,60,5) 
 a = a.reshape(3,4)  
@@ -397,7 +397,7 @@ print a
 
 输出如下：
 
-```
+```py
 原始数组是：
 [[ 0 5 10 15]
  [20 25 30 35]
@@ -425,7 +425,7 @@ print a
 
 在下面的示例中，迭代器遍历对应于每列的一维数组。
 
-```
+```py
 import numpy as np 
 a = np.arange(0,60,5) 
 a = a.reshape(3,4)  
@@ -439,7 +439,7 @@ for x in np.nditer(a, flags =  ['external_loop'], order =  'F'):
 
 输出如下：
 
-```
+```py
 原始数组是：
 [[ 0 5 10 15]
  [20 25 30 35]
@@ -456,7 +456,7 @@ for x in np.nditer(a, flags =  ['external_loop'], order =  'F'):
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.arange(0,60,5) 
 a = a.reshape(3,4)  
@@ -474,7 +474,7 @@ for x,y in np.nditer([a,b]):
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[ 0 5 10 15]
  [20 25 30 35]
@@ -508,7 +508,7 @@ NumPy包中有几个例程用于处理`ndarray`对象中的元素。 它们可�
 
 这个函数在不改变数据的条件下修改形状，它接受如下参数：
 
-```
+```py
 numpy.reshape(arr, newshape, order='C')
 ```
 
@@ -520,7 +520,7 @@ numpy.reshape(arr, newshape, order='C')
 
 例子
 
-```
+```py
 import numpy as np
 a = np.arange(8)
 print '原始数组：'
@@ -534,7 +534,7 @@ print b
 
 输出如下：
 
-```
+```py
 原始数组：
 [0 1 2 3 4 5 6 7]
 
@@ -551,7 +551,7 @@ print b
 
 例子
 
-```
+```py
 import numpy as np
 a = np.arange(8).reshape(2,4)
 print '原始数组：'
@@ -565,7 +565,7 @@ print a.flat[5]
 
 输出如下：
 
-```
+```py
 原始数组：
 [[0 1 2 3]
  [4 5 6 7]]
@@ -578,7 +578,7 @@ print a.flat[5]
 
 该函数返回折叠为一维的数组副本，函数接受下列参数：
 
-```
+```py
 ndarray.flatten(order='C')
 ```
 
@@ -588,7 +588,7 @@ ndarray.flatten(order='C')
 
 例子
 
-```
+```py
 import numpy as np
 a = np.arange(8).reshape(2,4)
 
@@ -607,7 +607,7 @@ print a.flatten(order = 'F')
 
 输出如下：
 
-```
+```py
 原数组：
 [[0 1 2 3]
  [4 5 6 7]]
@@ -623,7 +623,7 @@ print a.flatten(order = 'F')
 
 这个函数返回展开的一维数组，并且按需生成副本。返回的数组和输入数组拥有相同数据类型。这个函数接受两个参数。
 
-```
+```py
 numpy.ravel(a, order='C')
 ```
 
@@ -633,7 +633,7 @@ numpy.ravel(a, order='C')
 
 例子
 
-```
+```py
 import numpy as np
 a = np.arange(8).reshape(2,4)
 
@@ -649,7 +649,7 @@ print '以 F 风格顺序调用 ravel 函数之后：'
 print a.ravel(order = 'F')
 ```
 
-```
+```py
 原数组：
 [[0 1 2 3]
  [4 5 6 7]]
@@ -674,7 +674,7 @@ print a.ravel(order = 'F')
 
 这个函数翻转给定数组的维度。如果可能的话它会返回一个视图。函数接受下列参数：
 
-```
+```py
 numpy.transpose(arr, axes)
 ```
 
@@ -685,7 +685,7 @@ numpy.transpose(arr, axes)
 
 例子
 
-```
+```py
 import numpy as np
 a = np.arange(12).reshape(3,4)
 
@@ -699,7 +699,7 @@ print np.transpose(a)
 
 输出如下：
 
-```
+```py
 原数组：
 [[ 0 1 2 3]
  [ 4 5 6 7]
@@ -718,7 +718,7 @@ print np.transpose(a)
 
 例子
 
-```
+```py
 import numpy as np
 a = np.arange(12).reshape(3,4)
 
@@ -732,7 +732,7 @@ print a.T
 
 输出如下：
 
-```
+```py
 原数组：
 [[ 0 1 2 3]
  [ 4 5 6 7]
@@ -749,7 +749,7 @@ print a.T
 
 该函数向后滚动特定的轴，直到一个特定位置。这个函数接受三个参数：
 
-```
+```py
 numpy.rollaxis(arr, axis, start)
 ```
 
@@ -761,7 +761,7 @@ numpy.rollaxis(arr, axis, start)
 
 例子
 
-```
+```py
 # 创建了三维的 ndarray
 import numpy as np
 a = np.arange(8).reshape(2,2,2)
@@ -782,7 +782,7 @@ print np.rollaxis(a,2,1)
 
 输出如下：
 
-```
+```py
 原数组：
 [[[0 1]
  [2 3]]
@@ -806,7 +806,7 @@ print np.rollaxis(a,2,1)
 
 该函数交换数组的两个轴。对于 1.10 之前的 NumPy 版本，会返回交换后数组的视图。这个函数接受下列参数：
 
-```
+```py
 numpy.swapaxes(arr, axis1, axis2)
 ```
 
@@ -814,7 +814,7 @@ numpy.swapaxes(arr, axis1, axis2)
 +   `axis1`：对应第一个轴的整数
 +   `axis2`：对应第二个轴的整数
 
-```
+```py
 # 创建了三维的 ndarray
 import numpy as np
 a = np.arange(8).reshape(2,2,2)
@@ -830,7 +830,7 @@ print np.swapaxes(a, 2, 0)
 
 输出如下：
 
-```
+```py
 原数组：
 [[[0 1]
  [2 3]]
@@ -862,7 +862,7 @@ print np.swapaxes(a, 2, 0)
 
 该函数使用两个数组作为输入参数。 下面的例子说明了它的用法。
 
-```
+```py
 import numpy as np
 x = np.array([[1], [2], [3]])
 y = np.array([4, 5, 6])  
@@ -901,7 +901,7 @@ print x + y
 
 输出如下：
 
-```
+```py
 对 y 广播 x：
 1 4
 1 5
@@ -931,13 +931,13 @@ x 与 y 的和：
 
 该函数接受以下参数。
 
-```
+```py
 numpy.broadcast_to(array, shape, subok)
 ```
 
 例子
 
-```
+```py
 import numpy as np
 a = np.arange(4).reshape(1,4)
 
@@ -951,7 +951,7 @@ print np.broadcast_to(a,(4,4))
 
 输出如下：
 
-```
+```py
 [[0  1  2  3]
  [0  1  2  3]
  [0  1  2  3]
@@ -962,7 +962,7 @@ print np.broadcast_to(a,(4,4))
 
 函数通过在指定位置插入新的轴来扩展数组形状。该函数需要两个参数：
 
-```
+```py
 numpy.expand_dims(arr, axis)
 ```
 
@@ -973,7 +973,7 @@ numpy.expand_dims(arr, axis)
 
 例子
 
-```
+```py
 import numpy as np
 x = np.array(([1,2],[3,4]))
 
@@ -1006,7 +1006,7 @@ print x.shape, y.shape
 
 输出如下：
 
-```
+```py
 数组 x：
 [[1 2]
  [3 4]]
@@ -1033,7 +1033,7 @@ x.shape and y.shape:
 
 函数从给定数组的形状中删除一维条目。 此函数需要两个参数。
 
-```
+```py
 numpy.squeeze(arr, axis)
 ```
 
@@ -1044,7 +1044,7 @@ numpy.squeeze(arr, axis)
 
 例子
 
-```
+```py
 import numpy as np  
 x = np.arange(9).reshape(1,3,3)
 
@@ -1063,7 +1063,7 @@ print x.shape, y.shape
 
 输出如下：
 
-```
+```py
 数组 x：
 [[[0 1 2]
  [3 4 5]
@@ -1091,7 +1091,7 @@ print x.shape, y.shape
 
 数组的连接是指连接。 此函数用于沿指定轴连接相同形状的两个或多个数组。 该函数接受以下参数。
 
-```
+```py
 numpy.concatenate((a1, a2, ...), axis)
 ```
 
@@ -1102,7 +1102,7 @@ numpy.concatenate((a1, a2, ...), axis)
 
 例子
 
-```
+```py
 import numpy as np
 a = np.array([[1,2],[3,4]])
 
@@ -1126,7 +1126,7 @@ print np.concatenate((a,b),axis = 1)
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[1 2]
  [3 4]]
@@ -1150,7 +1150,7 @@ print np.concatenate((a,b),axis = 1)
 
 此函数沿新轴连接数组序列。 此功能添加自 NumPy 版本 1.10.0。 需要提供以下参数。
 
-```
+```py
 numpy.stack(arrays, axis)
 ```
 
@@ -1159,7 +1159,7 @@ numpy.stack(arrays, axis)
 +   `arrays`：相同形状的数组序列
 +   `axis`：返回数组中的轴，输入数组沿着它来堆叠
 
-```
+```py
 import numpy as np
 a = np.array([[1,2],[3,4]])
 
@@ -1182,7 +1182,7 @@ print np.stack((a,b),1)
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[1 2]
  [3 4]]
@@ -1210,7 +1210,7 @@ print np.stack((a,b),1)
 
 例子
 
-```
+```py
 import numpy as np
 a = np.array([[1,2],[3,4]])
 
@@ -1231,7 +1231,7 @@ print '\n'
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[1 2]
  [3 4]]
@@ -1249,7 +1249,7 @@ print '\n'
 
 `numpy.stack`函数的变体，通过堆叠来生成竖直的单个数组。
 
-```
+```py
 import numpy as np
 a = np.array([[1,2],[3,4]])
 
@@ -1269,7 +1269,7 @@ print c
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[1 2]
  [3 4]]
@@ -1297,7 +1297,7 @@ print c
 
 该函数沿特定的轴将数组分割为子数组。函数接受三个参数：
 
-```
+```py
 numpy.split(ary, indices_or_sections, axis)
 ```
 
@@ -1309,7 +1309,7 @@ numpy.split(ary, indices_or_sections, axis)
 
 例子
 
-```
+```py
 import numpy as np
 a = np.arange(9)
 
@@ -1329,7 +1329,7 @@ print b
 
 输出如下：
 
-```
+```py
 第一个数组：
 [0 1 2 3 4 5 6 7 8]
 
@@ -1344,7 +1344,7 @@ print b
 
 `numpy.hsplit`是`split()`函数的特例，其中轴为 1 表示水平分割，无论输入数组的维度是什么。
 
-```
+```py
 import numpy as np
 a = np.arange(16).reshape(4,4)
 
@@ -1360,7 +1360,7 @@ print '\n'
 
 输出：
 
-```
+```py
 第一个数组：
 [[ 0 1 2 3]
  [ 4 5 6 7]
@@ -1381,7 +1381,7 @@ print '\n'
 
 `numpy.vsplit`是`split()`函数的特例，其中轴为 0 表示竖直分割，无论输入数组的维度是什么。下面的例子使之更清楚。
 
-```
+```py
 import numpy as np
 a = np.arange(16).reshape(4,4)
 
@@ -1396,7 +1396,7 @@ print b
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[ 0 1 2 3]
  [ 4 5 6 7]
@@ -1424,7 +1424,7 @@ print b
 
 此函数返回指定大小的新数组。 如果新大小大于原始大小，则包含原始数组中的元素的重复副本。 该函数接受以下参数。
 
-```
+```py
 numpy.resize(arr, shape)
 ```
 
@@ -1435,7 +1435,7 @@ numpy.resize(arr, shape)
 
 例子
 
-```
+```py
 import numpy as np
 a = np.array([[1,2,3],[4,5,6]])
 
@@ -1464,7 +1464,7 @@ print b
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[1 2 3]
  [4 5 6]]
@@ -1492,7 +1492,7 @@ print b
 
 函数接受下列函数：
 
-```
+```py
 numpy.append(arr, values, axis)
 ```
 
@@ -1504,7 +1504,7 @@ numpy.append(arr, values, axis)
 
 例子
 
-```
+```py
 import numpy as np
 a = np.array([[1,2,3],[4,5,6]])
 
@@ -1526,7 +1526,7 @@ print np.append(a, [[5,5,5],[7,8,9]],axis = 1)
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[1 2 3]
  [4 5 6]]
@@ -1550,7 +1550,7 @@ print np.append(a, [[5,5,5],[7,8,9]],axis = 1)
 
 `insert()`函数接受以下参数：
 
-```
+```py
 numpy.insert(arr, obj, values, axis)
 ```
 
@@ -1563,7 +1563,7 @@ numpy.insert(arr, obj, values, axis)
 
 例子
 
-```
+```py
 import numpy as np
 a = np.array([[1,2],[3,4],[5,6]])
 
@@ -1586,7 +1586,7 @@ print np.insert(a,1,11,axis = 1)
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[1 2]
  [3 4]
@@ -1615,7 +1615,7 @@ print np.insert(a,1,11,axis = 1)
 
 此函数返回从输入数组中删除指定子数组的新数组。 与`insert()`函数的情况一样，如果未提供轴参数，则输入数组将展开。 该函数接受以下参数：
 
-```
+```py
 Numpy.delete(arr, obj, axis)
 ```
 
@@ -1627,7 +1627,7 @@ Numpy.delete(arr, obj, axis)
 
 例子
 
-```
+```py
 import numpy as np
 a = np.arange(12).reshape(3,4)
 
@@ -1650,7 +1650,7 @@ print np.delete(a, np.s_[::2])
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[ 0 1 2 3]
  [ 4 5 6 7]
@@ -1672,7 +1672,7 @@ print np.delete(a, np.s_[::2])
 
 此函数返回输入数组中的去重元素数组。 该函数能够返回一个元组，包含去重数组和相关索引的数组。 索引的性质取决于函数调用中返回参数的类型。
 
-```
+```py
 numpy.unique(arr, return_index, return_inverse, return_counts)
 ```
 
@@ -1685,7 +1685,7 @@ numpy.unique(arr, return_index, return_inverse, return_counts)
 
 例子
 
-```
+```py
 import numpy as np
 a = np.array([5,2,6,2,7,5,6,8,2,9])
 
@@ -1728,7 +1728,7 @@ print indices
 
 输出如下：
 
-```
+```py
 第一个数组：
 [5 2 6 2 7 5 6 8 2 9]
 
@@ -1774,7 +1774,7 @@ print indices
 
 例子
 
-```
+```py
 import numpy as np 
 print '13 和 17 的二进制形式：' 
 a,b = 13,17 
@@ -1787,7 +1787,7 @@ print np.bitwise_and(13, 17)
 
 输出如下：
 
-```
+```py
 13 和 17 的二进制形式：
 0b1101 0b10001
 
@@ -1816,7 +1816,7 @@ print np.bitwise_and(13, 17)
 
 例子
 
-```
+```py
 import numpy as np 
 a,b = 13,17 
 print '13 和 17 的二进制形式：' 
@@ -1828,7 +1828,7 @@ print np.bitwise_or(13, 17)
 
 输出如下：
 
-```
+```py
 13 和 17 的二进制形式：
 0b1101 0b10001
 
@@ -1857,7 +1857,7 @@ print np.bitwise_or(13, 17)
 
 例子
 
-```
+```py
 import numpy as np 
 
 print '13 的位反转，其中 ndarray 的 dtype 是 uint8：' 
@@ -1875,7 +1875,7 @@ print np.binary_repr(242, width = 8)
 
 输出如下：
 
-```
+```py
 13 的位反转，其中 ndarray 的 dtype 是 uint8：
 [242]
 
@@ -1894,7 +1894,7 @@ print np.binary_repr(242, width = 8)
 
 例如，
 
-```
+```py
 import numpy as np 
 
 print '将 10 左移两位：' 
@@ -1912,7 +1912,7 @@ print np.binary_repr(40, width = 8)
 
 输出如下：
 
-```
+```py
 将 10 左移两位：
 40
 
@@ -1927,7 +1927,7 @@ print np.binary_repr(40, width = 8)
 
 `numpy.right_shift()`函数将数组元素的二进制表示中的位向右移动到指定位置，左侧附加相等数量的 0。
 
-```
+```py
 import numpy as np 
 
 print '将 40 右移两位：' 
@@ -1945,7 +1945,7 @@ print np.binary_repr(10, width = 8)
 
 输出如下：
 
-```
+```py
 将 40 右移两位：
 10
 
@@ -1988,7 +1988,7 @@ print np.binary_repr(10, width = 8)
 
 函数执行按元素的字符串连接。
 
-```
+```py
 import numpy as np 
 print '连接两个字符串：' 
 print np.char.add(['hello'],[' xyz']) 
@@ -2000,7 +2000,7 @@ print np.char.add(['hello', 'hi'],[' abc', ' xyz'])
 
 输出如下：
 
-```
+```py
 连接两个字符串：
 ['hello xyz']
 
@@ -2012,14 +2012,14 @@ print np.char.add(['hello', 'hi'],[' abc', ' xyz'])
 
 这个函数执行多重连接。
 
-```
+```py
 import numpy as np 
 print np.char.multiply('Hello ',3)
 ```
 
 输出如下：
 
-```
+```py
 Hello Hello Hello 
 ```
 
@@ -2027,7 +2027,7 @@ Hello Hello Hello
 
 此函数返回所需宽度的数组，以便输入字符串位于中心，并使用`fillchar`在左侧和右侧进行填充。
 
-```
+```py
 import numpy as np 
 # np.char.center(arr, width,fillchar) 
 print np.char.center('hello', 20,fillchar = '*')
@@ -2035,7 +2035,7 @@ print np.char.center('hello', 20,fillchar = '*')
 
 输出如下：
 
-```
+```py
 *******hello********
 ```
 
@@ -2043,14 +2043,14 @@ print np.char.center('hello', 20,fillchar = '*')
 
 函数返回字符串的副本，其中第一个字母大写
 
-```
+```py
 import numpy as np 
 print np.char.capitalize('hello world')
 ```
 
 输出如下：
 
-```
+```py
 Hello world 
 ```
 
@@ -2058,14 +2058,14 @@ Hello world
 
 返回输入字符串的按元素标题转换版本，其中每个单词的首字母都大写。
 
-```
+```py
 import numpy as np 
 print np.char.title('hello how are you?')
 ```
 
 输出如下：
 
-```
+```py
 Hello How Are You?
 ```
 
@@ -2073,7 +2073,7 @@ Hello How Are You?
 
 函数返回一个数组，其元素转换为小写。它对每个元素调用`str.lower`。
 
-```
+```py
 import numpy as np 
 print np.char.lower(['HELLO','WORLD']) 
 print np.char.lower('HELLO')
@@ -2081,7 +2081,7 @@ print np.char.lower('HELLO')
 
 输出如下：
 
-```
+```py
 ['hello' 'world']
 hello
 ```
@@ -2090,7 +2090,7 @@ hello
 
 函数返回一个数组，其元素转换为大写。它对每个元素调用`str.upper`。
 
-```
+```py
 import numpy as np 
 print np.char.upper('hello') 
 print np.char.upper(['hello','world'])
@@ -2099,7 +2099,7 @@ print np.char.upper(['hello','world'])
 
 输出如下：
 
-```
+```py
 HELLO
 ['HELLO' 'WORLD']
 ```
@@ -2108,7 +2108,7 @@ HELLO
 
 此函数返回输入字符串中的单词列表。 默认情况下，空格用作分隔符。 否则，指定的分隔符字符用于分割字符串。
 
-```
+```py
 import numpy as np 
 print np.char.split ('hello how are you?') 
 print np.char.split ('TutorialsPoint,Hyderabad,Telangana', sep = ',')
@@ -2116,7 +2116,7 @@ print np.char.split ('TutorialsPoint,Hyderabad,Telangana', sep = ',')
 
 输出如下：
 
-```
+```py
 ['hello', 'how', 'are', 'you?']
 ['TutorialsPoint', 'Hyderabad', 'Telangana']
 ```
@@ -2125,7 +2125,7 @@ print np.char.split ('TutorialsPoint,Hyderabad,Telangana', sep = ',')
 
 函数返回数组中元素的单词列表，以换行符分割。
 
-```
+```py
 import numpy as np 
 print np.char.splitlines('hello\nhow are you?') 
 print np.char.splitlines('hello\rhow are you?')
@@ -2133,7 +2133,7 @@ print np.char.splitlines('hello\rhow are you?')
 
 输出如下：
 
-```
+```py
 ['hello', 'how are you?']
 ['hello', 'how are you?']
 ```
@@ -2144,7 +2144,7 @@ print np.char.splitlines('hello\rhow are you?')
 
 函数返回数组的副本，其中元素移除了开头或结尾处的特定字符。
 
-```
+```py
 import numpy as np 
 print np.char.strip('ashok arora','a') 
 print np.char.strip(['arora','admin','java'],'a')
@@ -2152,7 +2152,7 @@ print np.char.strip(['arora','admin','java'],'a')
 
 输出如下：
 
-```
+```py
 shok aror
 ['ror' 'dmin' 'jav']
 ```
@@ -2161,7 +2161,7 @@ shok aror
 
 这个函数返回一个字符串，其中单个字符由特定的分隔符连接。
 
-```
+```py
 import numpy as np 
 print np.char.join(':','dmy') 
 print np.char.join([':','-'],['dmy','ymd'])
@@ -2169,7 +2169,7 @@ print np.char.join([':','-'],['dmy','ymd'])
 
 输出如下：
 
-```
+```py
 d:m:y
 ['d:m:y' 'y-m-d']
 ```
@@ -2178,14 +2178,14 @@ d:m:y
 
 这个函数返回字符串副本，其中所有字符序列的出现位置都被另一个给定的字符序列取代。
 
-```
+```py
 import numpy as np 
 print np.char.replace ('He is a good boy', 'is', 'was')
 ```
 
 输出如下：
 
-```
+```py
 He was a good boy
 ```
 
@@ -2193,7 +2193,7 @@ He was a good boy
 
 这个函数在给定的字符串中使用特定编码调用`str.decode()`。
 
-```
+```py
 import numpy as np 
 
 a = np.char.encode('hello', 'cp500') 
@@ -2203,7 +2203,7 @@ print np.char.decode(a,'cp500')
 
 输出如下：
 
-```
+```py
 \x88\x85\x93\x93\x96
 hello
 ```
@@ -2212,7 +2212,7 @@ hello
 
 此函数对数组中的每个元素调用`str.encode`函数。 默认编码是`utf_8`，可以使用标准 Python 库中的编解码器。
 
-```
+```py
 import numpy as np 
 a = np.char.encode('hello', 'cp500') 
 print a
@@ -2220,7 +2220,7 @@ print a
 
 输出如下：
 
-```
+```py
 \x88\x85\x93\x93\x96
 ```
 
@@ -2237,7 +2237,7 @@ NumPy 拥有标准的三角函数，它为弧度制单位的给定角度返回�
 
 **示例**
 
-```
+```py
 import numpy as np
 a = np.array([0,30,45,60,90])  
 print  '不同角度的正弦值：'  
@@ -2253,7 +2253,7 @@ print np.tan(a*np.pi/180)
 
 输出如下：
 
-```
+```py
 不同角度的正弦值：                                                   
 [ 0.          0.5         0.70710678  0.8660254   1.        ]                 
 
@@ -2271,7 +2271,7 @@ print np.tan(a*np.pi/180)
 
 **示例**
 
-```
+```py
 import numpy as np
 a = np.array([0,30,45,60,90])  
 print  '含有正弦值的数组：'
@@ -2310,7 +2310,7 @@ print np.degrees(inv)
 
 输出如下：
 
-```
+```py
 含有正弦值的数组：
 [ 0.          0.5         0.70710678  0.8660254   1.        ]
 
@@ -2348,7 +2348,7 @@ tan 函数：
 
 这个函数返回四舍五入到所需精度的值。 该函数接受以下参数。
 
-```
+```py
 numpy.around(a,decimals)
 
 ```
@@ -2362,7 +2362,7 @@ numpy.around(a,decimals)
 
 **示例**
 
-```
+```py
 import numpy as np
 a = np.array([1.0,5.55,  123,  0.567,  25.532])  
 print  '原数组：'  
@@ -2376,7 +2376,7 @@ print np.around(a, decimals =  -1)
 
 输出如下：
 
-```
+```py
 原数组：                                                          
 [   1.       5.55   123.       0.567   25.532]
 
@@ -2393,7 +2393,7 @@ print np.around(a, decimals =  -1)
 
 **示例**
 
-```
+```py
 import numpy as np
 a = np.array([-1.7,  1.5,  -0.2,  0.6,  10])  
 print  '提供的数组：'  
@@ -2405,7 +2405,7 @@ print np.floor(a)
 
 输出如下：
 
-```
+```py
 提供的数组：                                                            
 [ -1.7   1.5  -0.2   0.6  10. ]
 
@@ -2420,7 +2420,7 @@ print np.floor(a)
 
 **示例**
 
-```
+```py
 import numpy as np
 a = np.array([-1.7,  1.5,  -0.2,  0.6,  10])  
 print  '提供的数组：'  
@@ -2432,7 +2432,7 @@ print np.ceil(a)
 
 输出如下：
 
-```
+```py
 提供的数组：
 [ -1.7   1.5  -0.2   0.6  10. ]
 
@@ -2448,7 +2448,7 @@ print np.ceil(a)
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.arange(9, dtype = np.float_).reshape(3,3)  
 print  '第一个数组：'  
@@ -2473,7 +2473,7 @@ print np.divide(a,b)
 
 输出如下：
 
-```
+```py
 第一个数组：
 [[ 0. 1. 2.]
  [ 3. 4. 5.]
@@ -2512,7 +2512,7 @@ print np.divide(a,b)
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.array([0.25,  1.33,  1,  0,  100])  
 print  '我们的数组是：'  
@@ -2531,7 +2531,7 @@ print np.reciprocal(b)
 
 输出如下：
 
-```
+```py
 我们的数组是：                                                               
 [   0.25    1.33    1.      0.    100.  ]                                     
 
@@ -2552,7 +2552,7 @@ main.py:9: RuntimeWarning: divide by zero encountered in reciprocal
 
 此函数将第一个输入数组中的元素作为底数，计算它与第二个输入数组中相应元素的幂。
 
-```
+```py
 import numpy as np 
 a = np.array([10,100,1000])  
 print  '我们的数组是；'  
@@ -2571,7 +2571,7 @@ print np.power(a,b)
 
 输出如下：
 
-```
+```py
 我们的数组是；                                                              
 [  10  100 1000]                                                              
 
@@ -2590,7 +2590,7 @@ print np.power(a,b)
 
 此函数返回输入数组中相应元素的除法余数。 函数`numpy.remainder()`也产生相同的结果。
 
-```
+```py
 import numpy as np 
 a = np.array([10,20,30]) 
 b = np.array([3,5,7])  
@@ -2609,7 +2609,7 @@ print np.remainder(a,b)
 
 输出如下：
 
-```
+```py
 第一个数组：
 [10 20 30]
 
@@ -2634,7 +2634,7 @@ print np.remainder(a,b)
 
 * `numpy.angle()` 返回复数参数的角度。 函数的参数是`degree`。 如果为`true`，返回的角度以角度制来表示，否则为以弧度制来表示。
 
-```
+```py
 import numpy as np 
 a = np.array([-5.6j,  0.2j,  11.  ,  1+1j])  
 print  '我们的数组是：'  
@@ -2658,7 +2658,7 @@ print np.angle(a, deg =  True)
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [ 0.-5.6j 0.+0.2j 11.+0.j 1.+1.j ]
 
@@ -2692,7 +2692,7 @@ NumPy 有很多有用的统计函数，用于从数组中给定的元素中查�
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.array([[3,7,5],[8,4,3],[2,4,9]])  
 print  '我们的数组是：'  
@@ -2713,7 +2713,7 @@ print np.amax(a, axis =  0)
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[3 7 5]
 [8 4 3]
@@ -2737,7 +2737,7 @@ print np.amax(a, axis =  0)
 
 `numpy.ptp()`函数返回沿轴的值的范围（最大值 - 最小值）。
 
-```
+```py
 import numpy as np 
 a = np.array([[3,7,5],[8,4,3],[2,4,9]])  
 print  '我们的数组是：'  
@@ -2755,7 +2755,7 @@ print np.ptp(a, axis =  0)
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[3 7 5]
 [8 4 3]
@@ -2776,7 +2776,7 @@ print np.ptp(a, axis =  0)
 
 百分位数是统计中使用的度量，表示小于这个值的观察值的百分比。 函数` numpy.percentile()`接受以下参数。
 
-```
+```py
 numpy.percentile(a, q, axis)
 
 ```
@@ -2791,7 +2791,7 @@ numpy.percentile(a, q, axis)
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.array([[30,40,70],[80,20,10],[50,90,60]])  
 print  '我们的数组是：'  
@@ -2809,7 +2809,7 @@ print np.percentile(a,50, axis =  0)
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[30 40 70]
  [80 20 10]
@@ -2832,7 +2832,7 @@ print np.percentile(a,50, axis =  0)
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.array([[30,65,70],[80,95,10],[50,90,60]])  
 print  '我们的数组是：'  
@@ -2850,7 +2850,7 @@ print np.median(a, axis =  1)
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[30 65 70]
  [80 95 10]
@@ -2873,7 +2873,7 @@ print np.median(a, axis =  1)
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.array([[1,2,3],[3,4,5],[4,5,6]])  
 print  '我们的数组是：'  
@@ -2891,7 +2891,7 @@ print np.mean(a, axis =  1)
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[1 2 3]
  [3 4 5]
@@ -2914,13 +2914,13 @@ print np.mean(a, axis =  1)
 
 考虑数组`[1,2,3,4]`和相应的权重`[4,3,2,1]`，通过将相应元素的乘积相加，并将和除以权重的和，来计算加权平均值。
 
-```
+```py
 加权平均值 = (1*4+2*3+3*2+4*1)/(4+3+2+1)
 ```
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.array([1,2,3,4])  
 print  '我们的数组是：'  
@@ -2941,7 +2941,7 @@ print np.average([1,2,3,  4],weights =  [4,3,2,1], returned =  True)
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [1 2 3 4]
 
@@ -2960,7 +2960,7 @@ print np.average([1,2,3,  4],weights =  [4,3,2,1], returned =  True)
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.arange(6).reshape(3,2)  
 print  '我们的数组是：'  
@@ -2976,7 +2976,7 @@ print np.average(a, axis =  1, weights = wt, returned =  True)
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[0 1]
  [2 3]
@@ -2993,7 +2993,7 @@ print np.average(a, axis =  1, weights = wt, returned =  True)
 ###  标准差
 
 标准差是与均值的偏差的平方的平均值的平方根。 标准差公式如下：
-```
+```py
 std = sqrt(mean((x - x.mean())**2))
 
 ```
@@ -3002,14 +3002,14 @@ std = sqrt(mean((x - x.mean())**2))
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 print np.std([1,2,3,4])
 ```
 
 输出如下：
 
-```
+```py
 1.1180339887498949 
 
 ```
@@ -3020,14 +3020,14 @@ print np.std([1,2,3,4])
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 print np.var([1,2,3,4])
 ```
 
 输出如下：
 
-```
+```py
 1.25
 
 ```
@@ -3049,7 +3049,7 @@ NumPy中提供了各种排序相关功能。 这些排序函数实现不同的�
 
 `sort()`函数返回输入数组的排序副本。 它有以下参数：
 
-```
+```py
 numpy.sort(a, axis, kind, order)
 
 ```
@@ -3065,7 +3065,7 @@ numpy.sort(a, axis, kind, order)
 
 ### # 示例
 
-```
+```py
 import numpy as np  
 a = np.array([[3,7],[9,1]])  
 print  '我们的数组是：'  
@@ -3089,7 +3089,7 @@ print np.sort(a, order =  'name')
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[3 7]
  [9 1]]
@@ -3116,7 +3116,7 @@ print np.sort(a, order =  'name')
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 x = np.array([3,  1,  2])  
 print  '我们的数组是：'  
@@ -3136,7 +3136,7 @@ for i in y:
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [3 1 2]
 
@@ -3157,7 +3157,7 @@ for i in y:
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 
 nm =  ('raju','anil','ravi','amar') 
@@ -3172,7 +3172,7 @@ print  [nm[i]  +  ", "  + dv[i]  for i in ind]
 
 输出如下：
 
-```
+```py
 调用 lexsort() 函数：
 [3 1 0 2]
 
@@ -3189,7 +3189,7 @@ NumPy 模块有一些用于在数组内搜索的函数。 提供了用于找到�
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.array([[30,40,70],[80,20,10],[50,90,60]])  
 print  '我们的数组是：'  
@@ -3227,7 +3227,7 @@ print minindex
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[30 40 70]
  [80 20 10]
@@ -3265,7 +3265,7 @@ print minindex
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.array([[30,40,0],[0,20,10],[50,0,60]])  
 print  '我们的数组是：'  
@@ -3277,7 +3277,7 @@ print np.nonzero (a)
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[30 40 0]
  [ 0 20 10]
@@ -3294,7 +3294,7 @@ print np.nonzero (a)
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 x = np.arange(9.).reshape(3,  3)  
 print  '我们的数组是：'  
@@ -3308,7 +3308,7 @@ print x[y]
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[ 0. 1. 2.]
  [ 3. 4. 5.]
@@ -3326,7 +3326,7 @@ print x[y]
 
 `extract()`函数返回满足任何条件的元素。
 
-```
+```py
 import numpy as np 
 x = np.arange(9.).reshape(3,  3)  
 print  '我们的数组是：'  
@@ -3341,7 +3341,7 @@ print np.extract(condition, x)
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[ 0. 1. 2.]
  [ 3. 4. 5.]
@@ -3368,7 +3368,7 @@ print np.extract(condition, x)
 
 `numpy.ndarray.byteswap()`函数在两个表示：大端和小端之间切换。
 
-```
+```py
 import numpy as np 
 a = np.array([1,  256,  8755], dtype = np.int16)  
 print  '我们的数组是：'  
@@ -3385,7 +3385,7 @@ print map(hex,a)
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [1 256 8755]
 
@@ -3415,14 +3415,14 @@ NumPy 中定义的最重要的对象是称为 `ndarray` 的 N 维数组类型。
 
 `ndarray`类的实例可以通过本教程后面描述的不同的数组创建例程来构造。 基本的`ndarray`是使用 NumPy 中的数组函数创建的，如下所示：
 
-```
+```py
 numpy.array 
 
 ```
 
 它从任何暴露数组接口的对象，或从返回数组的任何方法创建一个ndarray。
 
-```
+```py
 numpy.array(object, dtype = None, copy = True, order = None, subok = False, ndmin = 0)
 
 ```
@@ -3442,7 +3442,7 @@ numpy.array(object, dtype = None, copy = True, order = None, subok = False, ndmi
 
 ###  示例 1
 
-```
+```py
 import numpy as np 
 a = np.array([1,2,3])  
 print a
@@ -3450,14 +3450,14 @@ print a
 
 输出如下：
 
-```
+```py
 [1, 2, 3]
 
 ```
 
 ###  示例 2
 
-```
+```py
 # 多于一个维度  
 import numpy as np 
 a = np.array([[1,  2],  [3,  4]])  
@@ -3466,7 +3466,7 @@ print a
 
 输出如下：
 
-```
+```py
 [[1, 2] 
  [3, 4]]
 
@@ -3474,7 +3474,7 @@ print a
 
 ###  示例 3
 
-```
+```py
 # 最小维度  
 import numpy as np 
 a = np.array([1,  2,  3,4,5], ndmin =  2)  
@@ -3483,14 +3483,14 @@ print a
 
 输出如下：
 
-```
+```py
 [[1, 2, 3, 4, 5]]
 
 ```
 
 ###  示例 4
 
-```
+```py
 # dtype 参数  
 import numpy as np 
 a = np.array([1,  2,  3], dtype = complex)  
@@ -3499,7 +3499,7 @@ print a
 
 输出如下：
 
-```
+```py
 [ 1.+0.j,  2.+0.j,  3.+0.j]
 
 ```
@@ -3521,7 +3521,7 @@ print a
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.arange(6)  
 print  '我们的数组是：'  
@@ -3542,7 +3542,7 @@ print a
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [0 1 2 3 4 5]
 
@@ -3572,7 +3572,7 @@ NumPy 拥有`ndarray.view()`方法，它是一个新的数组对象，并可查�
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 # 最开始 a 是个 3X2 的数组
 a = np.arange(6).reshape(3,2)  
@@ -3596,7 +3596,7 @@ print a
 
 输出如下：
 
-```
+```py
 数组 a：
 [[0 1]
  [2 3]
@@ -3628,7 +3628,7 @@ a 的形状：
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.array([[10,10],  [2,3],  [4,5]])  
 print  '我们的数组：'  
@@ -3640,7 +3640,7 @@ print s
 
 输出如下：
 
-```
+```py
 我们的数组：
 [[10 10]
  [ 2 3]
@@ -3659,7 +3659,7 @@ print s
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 a = np.array([[10,10],  [2,3],  [4,5]])  
 print  '数组 a：'  
@@ -3681,7 +3681,7 @@ print a
 
 输出如下：
 
-```
+```py
 数组 a：
 [[10 10]
  [ 2 3]
@@ -3720,7 +3720,7 @@ NumPy 包包含一个 Matrix库`numpy.matlib`。此模块的函数返回矩阵�
 
 `matlib.empty()`函数返回一个新的矩阵，而不初始化元素。 该函数接受以下参数。
 
-```
+```py
 numpy.matlib.empty(shape, dtype, order)
 
 ```
@@ -3735,7 +3735,7 @@ numpy.matlib.empty(shape, dtype, order)
 
 ### # 示例
 
-```
+```py
 import numpy.matlib 
 import numpy as np 
 print np.matlib.empty((2,2))  
@@ -3744,7 +3744,7 @@ print np.matlib.empty((2,2))
 
 输出如下：
 
-```
+```py
 [[ 2.12199579e-314,   4.24399158e-314] 
  [ 4.24399158e-314,   2.12199579e-314]] 
 
@@ -3754,7 +3754,7 @@ print np.matlib.empty((2,2))
 
 此函数返回以零填充的矩阵。
 
-```
+```py
 import numpy.matlib 
 import numpy as np 
 print np.matlib.zeros((2,2))  
@@ -3762,7 +3762,7 @@ print np.matlib.zeros((2,2))
 
 输出如下：
 
-```
+```py
 [[ 0.  0.] 
  [ 0.  0.]]) 
 
@@ -3772,7 +3772,7 @@ print np.matlib.zeros((2,2))
 
 此函数返回以一填充的矩阵。
 
-```
+```py
 import numpy.matlib 
 import numpy as np 
 print np.matlib.ones((2,2))
@@ -3780,7 +3780,7 @@ print np.matlib.ones((2,2))
 
 输出如下：
 
-```
+```py
 [[ 1.  1.] 
  [ 1.  1.]] 
 
@@ -3790,7 +3790,7 @@ print np.matlib.ones((2,2))
 
 这个函数返回一个矩阵，对角线元素为 1，其他位置为零。 该函数接受以下参数。
 
-```
+```py
 numpy.matlib.eye(n, M,k, dtype)
 
 ```
@@ -3806,7 +3806,7 @@ numpy.matlib.eye(n, M,k, dtype)
 
 ### # 示例
 
-```
+```py
 import numpy.matlib 
 import numpy as np 
 print np.matlib.eye(n =  3, M =  4, k =  0, dtype =  float)
@@ -3814,7 +3814,7 @@ print np.matlib.eye(n =  3, M =  4, k =  0, dtype =  float)
 
 输出如下：
 
-```
+```py
 [[ 1.  0.  0.  0.] 
  [ 0.  1.  0.  0.] 
  [ 0.  0.  1.  0.]]) 
@@ -3825,7 +3825,7 @@ print np.matlib.eye(n =  3, M =  4, k =  0, dtype =  float)
 
 `numpy.matlib.identity()`函数返回给定大小的单位矩阵。单位矩阵是主对角线元素都为 1 的方阵。
 
-```
+```py
 import numpy.matlib 
 import numpy as np 
 print np.matlib.identity(5, dtype =  float)
@@ -3833,7 +3833,7 @@ print np.matlib.identity(5, dtype =  float)
 
 输出如下：
 
-```
+```py
 [[ 1.  0.  0.  0.  0.] 
  [ 0.  1.  0.  0.  0.] 
  [ 0.  0.  1.  0.  0.] 
@@ -3848,7 +3848,7 @@ print np.matlib.identity(5, dtype =  float)
 
 ### # 示例
 
-```
+```py
 import numpy.matlib 
 import numpy as np 
 print np.matlib.rand(3,3)
@@ -3856,7 +3856,7 @@ print np.matlib.rand(3,3)
 
 输出如下：
 
-```
+```py
 [[ 0.82674464  0.57206837  0.15497519] 
  [ 0.33857374  0.35742401  0.90895076] 
  [ 0.03968467  0.13962089  0.39665201]]
@@ -3867,7 +3867,7 @@ print np.matlib.rand(3,3)
 
 ### # 示例
 
-```
+```py
 import numpy.matlib 
 import numpy as np  
 
@@ -3877,7 +3877,7 @@ print i
 
 输出如下：
 
-```
+```py
 [[1  2] 
  [3  4]]
 
@@ -3885,7 +3885,7 @@ print i
 
 ### # 示例
 
-```
+```py
 import numpy.matlib 
 import numpy as np  
 
@@ -3895,7 +3895,7 @@ print j
 
 输出如下：
 
-```
+```py
 [[1  2] 
  [3  4]] 
 
@@ -3903,7 +3903,7 @@ print j
 
 ### # 示例
 
-```
+```py
 import numpy.matlib 
 import numpy as np  
 
@@ -3913,7 +3913,7 @@ print k
 
 输出如下：
 
-```
+```py
 [[1  2] 
  [3  4]]
 
@@ -3940,7 +3940,7 @@ NumPy 包包含`numpy.linalg`模块，提供线性代数所需的所有功能。
 
 此函数返回两个数组的点积。 对于二维向量，其等效于矩阵乘法。 对于一维数组，它是向量的内积。 对于 N 维数组，它是`a`的最后一个轴上的和与`b`的倒数第二个轴的乘积。
 
-```
+```py
 import numpy.matlib 
 import numpy as np 
 
@@ -3951,14 +3951,14 @@ np.dot(a,b)
 
 输出如下：
 
-```
+```py
 [[37  40] 
  [85  92]] 
 ```
 
 要注意点积计算为：
 
-```
+```py
 [[1*11+2*13, 1*12+2*14],[3*11+4*13, 3*12+4*14]]
 ```
 
@@ -3968,7 +3968,7 @@ np.dot(a,b)
 
 例子
 
-```
+```py
 import numpy as np 
 a = np.array([[1,2],[3,4]]) 
 b = np.array([[11,12],[13,14]]) 
@@ -3977,7 +3977,7 @@ print np.vdot(a,b)
 
 输出如下：
 
-```
+```py
 130
 ```
 
@@ -3989,7 +3989,7 @@ print np.vdot(a,b)
 
 例子
 
-```
+```py
 import numpy as np 
 print np.inner(np.array([1,2,3]),np.array([0,1,0])) 
 # 等价于 1*0+2*1+3*0
@@ -3997,13 +3997,13 @@ print np.inner(np.array([1,2,3]),np.array([0,1,0]))
 
 输出如下：
 
-```
+```py
 2
 ```
 
 例子
 
-```
+```py
 # 多维数组示例 
 import numpy as np 
 a = np.array([[1,2], [3,4]]) 
@@ -4021,7 +4021,7 @@ print np.inner(a,b)
 
 输出如下：
 
-```
+```py
 数组 a：
 [[1 2]
 [3 4]]
@@ -4038,7 +4038,7 @@ print np.inner(a,b)
 上面的例子中，内积计算如下：
 
 
-```
+```py
 1*11+2*12, 1*13+2*14 
 3*11+4*12, 3*13+4*14 
 ```
@@ -4051,7 +4051,7 @@ print np.inner(a,b)
 
 例子
 
-```
+```py
 # 对于二维数组，它就是矩阵乘法
 import numpy.matlib 
 import numpy as np 
@@ -4063,14 +4063,14 @@ print np.matmul(a,b)
 
 输出如下：
 
-```
+```py
 [[4  1] 
  [2  2]] 
 ```
 
 例子
 
-```
+```py
 # 二维和一维运算
 import numpy.matlib 
 import numpy as np 
@@ -4083,14 +4083,14 @@ print np.matmul(b,a)
 
 输出如下：
 
-```
+```py
 [1  2] 
 [1  2] 
 ```
 
 例子
 
-```
+```py
 # 维度大于二的数组 
 import numpy.matlib 
 import numpy as np 
@@ -4102,7 +4102,7 @@ print np.matmul(a,b)
 
 输出如下：
 
-```
+```py
 [[[2   3] 
    [6   11]] 
   [[10  19] 
@@ -4119,7 +4119,7 @@ print np.matmul(a,b)
 
 例子
 
-```
+```py
 import numpy as np
 a = np.array([[1,2], [3,4]]) 
 print np.linalg.det(a)
@@ -4127,13 +4127,13 @@ print np.linalg.det(a)
 
 输出如下：
 
-```
+```py
 -2.0
 ```
 
 例子
 
-```
+```py
 b = np.array([[6,1,1], [4, -2, 5], [2,8,7]]) 
 print b 
 print np.linalg.det(b) 
@@ -4142,7 +4142,7 @@ print 6*(-2*7 - 5*8) - 1*(4*7 - 5*2) + 1*(4*8 - -2*2)
 
 输出如下：
 
-```
+```py
 [[ 6 1 1]
  [ 4 -2 5]
  [ 2 8 7]]
@@ -4158,7 +4158,7 @@ print 6*(-2*7 - 5*8) - 1*(4*7 - 5*2) + 1*(4*8 - -2*2)
 
 考虑以下线性方程：
 
-```
+```py
 x + y + z = 6
 
 2y + 5z = -4
@@ -4172,13 +4172,13 @@ x + y + z = 6
 
 如果矩阵成为`A`、`X`和`B`，方程变为：
 
-```
+```py
 AX = B  
 ```
 
 或
 
-```
+```py
 X = A^(-1)B 
 ```
 
@@ -4188,7 +4188,7 @@ X = A^(-1)B
 
 例子
 
-```
+```py
 import numpy as np 
 
 x = np.array([[1,2],[3,4]]) 
@@ -4200,7 +4200,7 @@ print np.dot(x,y)
 
 输出如下：
 
-```
+```py
 [[1 2]                                                                        
  [3 4]]                                                                       
 [[-2.   1. ]                                                                  
@@ -4213,7 +4213,7 @@ print np.dot(x,y)
 
 现在让我们在示例中创建一个矩阵A的逆。
 
-```
+```py
 import numpy as np 
 a = np.array([[1,1,1],[0,2,5],[2,5,-1]]) 
 
@@ -4236,7 +4236,7 @@ print x
 
 输出如下：
 
-```
+```py
 数组 a：
 [[ 1 1 1]
  [ 0 2 5]
@@ -4260,7 +4260,7 @@ a 的逆：
 
 结果也可以使用下列函数获取
 
-```
+```py
 x = np.dot(ainv,b)
 ```
 
@@ -4276,7 +4276,7 @@ Matplotlib 模块最初是由 John D. Hunter 编写的。 自 2012 年以来，M
 
 通常，通过添加以下语句将包导入到 Python 脚本中：
 
-```
+```py
 from matplotlib import pyplot as plt
 
 ```
@@ -4287,7 +4287,7 @@ from matplotlib import pyplot as plt
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 from matplotlib import pyplot as plt 
 
@@ -4355,7 +4355,7 @@ plt.plot(x,y) plt.show()
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 from matplotlib import pyplot as plt 
 
@@ -4378,7 +4378,7 @@ plt.show()
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 import matplotlib.pyplot as plt 
 # 计算正弦曲线上点的 x 和 y 坐标
@@ -4398,7 +4398,7 @@ plt.show()
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 import matplotlib.pyplot as plt 
 # 计算正弦和余弦曲线上的点的 x 和 y 坐标 
@@ -4429,7 +4429,7 @@ plt.show()
 
 ### # 示例
 
-```
+```py
 from matplotlib import pyplot as plt 
 x =  [5,8,10] 
 y =  [12,16,6] 
@@ -4454,7 +4454,7 @@ NumPy 有一个`numpy.histogram()`函数，它是数据的频率分布的图形�
 
 `numpy.histogram()`函数将输入数组和`bin`作为两个参数。 `bin`数组中的连续元素用作每个`bin`的边界。
 
-```
+```py
 import numpy as np 
 
 a = np.array([22,87,5,43,56,73,55,54,11,20,51,5,79,31,27]) ]
@@ -4466,7 +4466,7 @@ print bins
 
 输出如下：
 
-```
+```py
 [3 4 5 2 1]
 [0 20 40 60 80 100]
 
@@ -4476,7 +4476,7 @@ print bins
 
 Matplotlib 可以将直方图的数字表示转换为图形。 `pyplot`子模块的`plt()`函数将包含数据和`bin`数组的数组作为参数，并转换为直方图。
 
-```
+```py
 from matplotlib import pyplot as plt 
 import numpy as np  
 
@@ -4506,7 +4506,7 @@ NumPy 为`ndarray`对象引入了一个简单的文件格式。 这个`npy`文�
 
 `numpy.save()`文件将输入数组存储在具有`npy`扩展名的磁盘文件中。
 
-```
+```py
 import numpy as np 
 a = np.array([1,2,3,4,5]) 
 np.save('outfile',a)
@@ -4514,7 +4514,7 @@ np.save('outfile',a)
 
 为了从`outfile.npy`重建数组，请使用`load()`函数。
 
-```
+```py
 import numpy as np 
 b = np.load('outfile.npy')  
 print b 
@@ -4522,7 +4522,7 @@ print b
 
 输出如下：
 
-```
+```py
 array([1, 2, 3, 4, 5])
 
 ```
@@ -4535,7 +4535,7 @@ array([1, 2, 3, 4, 5])
 
 ### # 示例
 
-```
+```py
 import numpy as np 
 
 a = np.array([1,2,3,4,5]) 
@@ -4546,7 +4546,7 @@ print b
 
 输出如下：
 
-```
+```py
 [ 1.  2.  3.  4.  5.] 
 
 ```
@@ -4611,7 +4611,7 @@ NumPy 数字类型是`dtype`（数据类型）对象的实例，每个对象具�
 
 `dtype`可由一下语法构造：
 
-```
+```py
 numpy.dtype(object, align, copy)
 
 ```
@@ -4626,7 +4626,7 @@ numpy.dtype(object, align, copy)
 
 ### # 示例 1
 
-```
+```py
 # 使用数组标量类型  
 import numpy as np 
 dt = np.dtype(np.int32)  
@@ -4635,14 +4635,14 @@ print dt
 
 输出如下：
 
-```
+```py
 int32
 
 ```
 
 ### # 示例 2
 
-```
+```py
 #int8，int16，int32，int64 可替换为等价的字符串 'i1'，'i2'，'i4'，以及其他。  
 import numpy as np 
 
@@ -4652,14 +4652,14 @@ print dt
 
 输出如下：
 
-```
+```py
 int32
 
 ```
 
 ### # 示例 3
 
-```
+```py
 # 使用端记号  
 import numpy as np 
 dt = np.dtype('>i4')  
@@ -4668,7 +4668,7 @@ print dt
 
 输出如下：
 
-```
+```py
 >i4
 
 ```
@@ -4677,7 +4677,7 @@ print dt
 
 ### # 示例 4
 
-```
+```py
 # 首先创建结构化数据类型。  
 import numpy as np 
 dt = np.dtype([('age',np.int8)])  
@@ -4686,14 +4686,14 @@ print dt
 
 输出如下：
 
-```
+```py
 [('age', 'i1')] 
 
 ```
 
 ### # 示例 5
 
-```
+```py
 # 现在将其应用于 ndarray 对象  
 import numpy as np 
 
@@ -4704,14 +4704,14 @@ print a
 
 输出如下：
 
-```
+```py
 [(10,) (20,) (30,)]
 
 ```
 
 ### # 示例 6
 
-```
+```py
 # 文件名称可用于访问 age 列的内容  
 import numpy as np 
 
@@ -4722,7 +4722,7 @@ print a['age']
 
 输出如下：
 
-```
+```py
 [10 20 30]
 
 ```
@@ -4731,7 +4731,7 @@ print a['age']
 
 以下示例定义名为 **student** 的结构化数据类型，其中包含字符串字段`name`，**整数字段**`age`和**浮点字段**`marks`。 此`dtype`应用于`ndarray`对象。
 
-```
+```py
 import numpy as np 
 student = np.dtype([('name','S20'),  ('age',  'i1'),  ('marks',  'f4')])  
 print student
@@ -4739,14 +4739,14 @@ print student
 
 输出如下：
 
-```
+```py
 [('name', 'S20'), ('age', 'i1'), ('marks', '<f4')])
 
 ```
 
 ### # 示例 8
 
-```
+```py
 import numpy as np 
 
 student = np.dtype([('name','S20'),  ('age',  'i1'),  ('marks',  'f4')]) 
@@ -4756,7 +4756,7 @@ print a
 
 输出如下：
 
-```
+```py
 [('abc', 21, 50.0), ('xyz', 18, 75.0)]
 
 ```
@@ -4798,7 +4798,7 @@ print a
 
 ### # 示例 1
 
-```
+```py
 import numpy as np 
 a = np.array([[1,2,3],[4,5,6]])  
 print a.shape
@@ -4806,14 +4806,14 @@ print a.shape
 
 输出如下：
 
-```
+```py
 (2, 3)
 
 ```
 
 ### # 示例 2
 
-```
+```py
 # 这会调整数组大小  
 import numpy as np 
 
@@ -4823,7 +4823,7 @@ print a
 
 输出如下：
 
-```
+```py
 [[1, 2] 
  [3, 4] 
  [5, 6]]
@@ -4834,7 +4834,7 @@ print a
 
 NumPy 也提供了`reshape`函数来调整数组大小。
 
-```
+```py
 import numpy as np 
 a = np.array([[1,2,3],[4,5,6]]) 
 b = a.reshape(3,2)  
@@ -4843,7 +4843,7 @@ print b
 
 输出如下：
 
-```
+```py
 [[1, 2] 
  [3, 4] 
  [5, 6]]
@@ -4856,7 +4856,7 @@ print b
 
 ### # 示例 1
 
-```
+```py
 # 等间隔数字的数组  
 import numpy as np 
 a = np.arange(24)  print a
@@ -4864,14 +4864,14 @@ a = np.arange(24)  print a
 
 输出如下：
 
-```
+```py
 [0 1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16 17 18 19 20 21 22 23] 
 
 ```
 
 ### # 示例 2
 
-```
+```py
 # 一维数组  
 import numpy as np 
 a = np.arange(24) a.ndim 
@@ -4883,7 +4883,7 @@ print b
 
 输出如下：
 
-```
+```py
 [[[ 0,  1,  2] 
   [ 3,  4,  5] 
   [ 6,  7,  8] 
@@ -4901,7 +4901,7 @@ print b
 
 ### # 示例 1
 
-```
+```py
 # 数组的 dtype 为 int8（一个字节）  
 import numpy as np 
 x = np.array([1,2,3,4,5], dtype = np.int8)  
@@ -4910,14 +4910,14 @@ print x.itemsize
 
 输出如下：
 
-```
+```py
 1
 
 ```
 
 ### # 示例 2
 
-```
+```py
 # 数组的 dtype 现在为 float32（四个字节）  
 import numpy as np 
 x = np.array([1,2,3,4,5], dtype = np.float32)  
@@ -4926,7 +4926,7 @@ print x.itemsize
 
 输出如下：
 
-```
+```py
 4
 
 ```
@@ -4948,7 +4948,7 @@ print x.itemsize
 
 下面的例子展示当前的标志。
 
-```
+```py
 import numpy as np 
 x = np.array([1,2,3,4,5])  
 print x.flags
@@ -4956,7 +4956,7 @@ print x.flags
 
 输出如下：
 
-```
+```py
 C_CONTIGUOUS : True 
 F_CONTIGUOUS : True 
 OWNDATA : True 
@@ -4977,7 +4977,7 @@ UPDATEIFCOPY : False
 
 它创建指定形状和`dtype`的未初始化数组。 它使用以下构造函数：
 
-```
+```py
 numpy.empty(shape, dtype = float, order = 'C')
 
 ```
@@ -4994,7 +4994,7 @@ numpy.empty(shape, dtype = float, order = 'C')
 
 下面的代码展示空数组的例子：
 
-```
+```py
 import numpy as np 
 x = np.empty([3,2], dtype =  int)  
 print x
@@ -5002,7 +5002,7 @@ print x
 
 输出如下：
 
-```
+```py
 [[22649312    1701344351] 
  [1818321759  1885959276] 
  [16779776    156368896]]
@@ -5015,7 +5015,7 @@ print x
 
 返回特定大小，以 0 填充的新数组。
 
-```
+```py
 numpy.zeros(shape, dtype = float, order = 'C')
 
 ```
@@ -5030,7 +5030,7 @@ numpy.zeros(shape, dtype = float, order = 'C')
 
 ### # 示例 1
 
-```
+```py
 # 含有 5 个 0 的数组，默认类型为 float  
 import numpy as np 
 x = np.zeros(5)  
@@ -5039,14 +5039,14 @@ print x
 
 输出如下：
 
-```
+```py
 [ 0.  0.  0.  0.  0.]
 
 ```
 
 ### # 示例 2
 
-```
+```py
 import numpy as np 
 x = np.zeros((5,), dtype = np.int)  
 print x
@@ -5054,14 +5054,14 @@ print x
 
 输出如下：
 
-```
+```py
 [0  0  0  0  0]
 
 ```
 
 ### # 示例 3
 
-```
+```py
 # 自定义类型 
 import numpy as np 
 x = np.zeros((2,2), dtype =  [('x',  'i4'),  ('y',  'i4')])  
@@ -5071,7 +5071,7 @@ print x
 输出如下：
 
 
-```
+```py
 [[(0,0)(0,0)]
  [(0,0)(0,0)]]         
 
@@ -5081,7 +5081,7 @@ print x
 
 返回特定大小，以 1 填充的新数组。
 
-```
+```py
 numpy.ones(shape, dtype = None, order = 'C')
 
 ```
@@ -5096,7 +5096,7 @@ numpy.ones(shape, dtype = None, order = 'C')
 
 ### # 示例 1
 
-```
+```py
 # 含有 5 个 1 的数组，默认类型为 float  
 import numpy as np 
 x = np.ones(5)  print x
@@ -5104,14 +5104,14 @@ x = np.ones(5)  print x
 
 输出如下：
 
-```
+```py
 [ 1.  1.  1.  1.  1.]
 
 ```
 
 ### # 示例 2
 
-```
+```py
 import numpy as np 
 x = np.ones([2,2], dtype =  int)  
 print x
@@ -5119,7 +5119,7 @@ print x
 
 输出如下：
 
-```
+```py
 [[1  1] 
  [1  1]]
 
@@ -5136,7 +5136,7 @@ print x
 
 此函数类似于`numpy.array`，除了它有较少的参数。 这个例程对于将 Python 序列转换为`ndarray`非常有用。
 
-```
+```py
 numpy.asarray(a, dtype = None, order = None)
 
 ```
@@ -5153,7 +5153,7 @@ numpy.asarray(a, dtype = None, order = None)
 
 ### # 示例 1
 
-```
+```py
 # 将列表转换为 ndarray 
 import numpy as np 
 
@@ -5164,14 +5164,14 @@ print a
 
 输出如下：
 
-```
+```py
 [1  2  3] 
 
 ```
 
 ### # 示例 2
 
-```
+```py
 # 设置了 dtype  
 import numpy as np 
 
@@ -5182,14 +5182,14 @@ print a
 
 输出如下：
 
-```
+```py
 [ 1.  2.  3.] 
 
 ```
 
 ### # 示例 3
 
-```
+```py
 # 来自元组的 ndarray  
 import numpy as np 
 
@@ -5200,14 +5200,14 @@ print a
 
 输出如下：
 
-```
+```py
 [1  2  3]
 
 ```
 
 ### # 示例 4
 
-```
+```py
 # 来自元组列表的 ndarray
 import numpy as np 
 
@@ -5218,7 +5218,7 @@ print a
 
 输出如下：
 
-```
+```py
 [(1, 2, 3) (4, 5)]
 
 ```
@@ -5227,7 +5227,7 @@ print a
 
 此函数将缓冲区解释为一维数组。 暴露缓冲区接口的任何对象都用作参数来返回`ndarray`。
 
-```
+```py
 numpy.frombuffer(buffer, dtype = float, count = -1, offset = 0)
 
 ```
@@ -5245,7 +5245,7 @@ numpy.frombuffer(buffer, dtype = float, count = -1, offset = 0)
 
 下面的例子展示了`frombuffer`函数的用法。
 
-```
+```py
 import numpy as np 
 s =  'Hello World' 
 a = np.frombuffer(s, dtype =  'S1')  
@@ -5254,7 +5254,7 @@ print a
 
 输出如下：
 
-```
+```py
 ['H'  'e'  'l'  'l'  'o'  ' '  'W'  'o'  'r'  'l'  'd']
 
 ```
@@ -5263,7 +5263,7 @@ print a
 
 此函数从任何可迭代对象构建一个`ndarray`对象，返回一个新的一维数组。
 
-```
+```py
 numpy.fromiter(iterable, dtype, count = -1)
 
 ```
@@ -5280,7 +5280,7 @@ numpy.fromiter(iterable, dtype, count = -1)
 
 ### # 示例 1
 
-```
+```py
 # 使用 range 函数创建列表对象  
 import numpy as np 
 list = range(5)  
@@ -5289,14 +5289,14 @@ print list
 
 输出如下：
 
-```
+```py
 [0,  1,  2,  3,  4]
 
 ```
 
 ### # 示例 2
 
-```
+```py
 # 从列表中获得迭代器  
 import numpy as np 
 list = range(5) 
@@ -5308,7 +5308,7 @@ print x
 
 输出如下：
 
-```
+```py
 [0.   1.   2.   3.   4.]
 
 ```
@@ -5324,7 +5324,7 @@ print x
 
 这个函数返回`ndarray`对象，包含给定范围内的等间隔值。
 
-```
+```py
 numpy.arange(start, stop, step, dtype)
 
 ```
@@ -5342,7 +5342,7 @@ numpy.arange(start, stop, step, dtype)
 
 ### # 示例 1
 
-```
+```py
 import numpy as np
 x = np.arange(5)  
 print x
@@ -5350,14 +5350,14 @@ print x
 
 输出如下：
 
-```
+```py
 [0  1  2  3  4]
 
 ```
 
 ### # 示例 2
 
-```
+```py
 import numpy as np
 # 设置了 dtype
 x = np.arange(5, dtype =  float)  
@@ -5366,14 +5366,14 @@ print x
 
 输出如下：
 
-```
+```py
 [0.  1.  2.  3.  4.]
 
 ```
 
 ### # 示例 3
 
-```
+```py
 # 设置了起始值和终止值参数  
 import numpy as np
 x = np.arange(10,20,2)  
@@ -5382,7 +5382,7 @@ print x
 
 输出如下：
 
-```
+```py
 [10  12  14  16  18]
 
 ```
@@ -5391,7 +5391,7 @@ print x
 
 此函数类似于`arange()`函数。 在此函数中，指定了范围之间的均匀间隔数量，而不是步长。 此函数的用法如下。
 
-```
+```py
 numpy.linspace(start, stop, num, endpoint, retstep, dtype)
 
 ```
@@ -5411,7 +5411,7 @@ numpy.linspace(start, stop, num, endpoint, retstep, dtype)
 
 ### # 示例 1
 
-```
+```py
 import numpy as np
 x = np.linspace(10,20,5)  
 print x
@@ -5419,14 +5419,14 @@ print x
 
 输出如下：
 
-```
+```py
 [10.   12.5   15.   17.5  20.]
 
 ```
 
 ### # 示例 2
 
-```
+```py
 # 将 endpoint 设为 false
 import numpy as np
 x = np.linspace(10,20,  5, endpoint =  False)  
@@ -5435,14 +5435,14 @@ print x
 
 输出如下：
 
-```
+```py
 [10.   12.   14.   16.   18.]
 
 ```
 
 ### # 示例 3
 
-```
+```py
 # 输出 retstep 值  
 import numpy as np
 
@@ -5453,7 +5453,7 @@ print x
 
 输出如下：
 
-```
+```py
 (array([ 1.  ,  1.25,  1.5 ,  1.75,  2.  ]), 0.25)
 
 ```
@@ -5462,7 +5462,7 @@ print x
 
 此函数返回一个`ndarray`对象，其中包含在对数刻度上均匀分布的数字。 刻度的开始和结束端点是某个底数的幂，通常为 10。
 
-```
+```py
 numpy.logspace(start, stop, num, endpoint, base, dtype)
 
 ```
@@ -5482,7 +5482,7 @@ numpy.logspace(start, stop, num, endpoint, base, dtype)
 
 ### # 示例 1
 
-```
+```py
 import numpy as np
 # 默认底数是 10
 a = np.logspace(1.0,  2.0, num =  10)  
@@ -5491,7 +5491,7 @@ print a
 
 输出如下：
 
-```
+```py
 [ 10.           12.91549665     16.68100537      21.5443469  27.82559402      
   35.93813664   46.41588834     59.94842503      77.42636827    100.    ]
 
@@ -5499,7 +5499,7 @@ print a
 
 ### # 示例 2
 
-```
+```py
 # 将对数空间的底数设置为 2  
 import numpy as np
 a = np.logspace(1,10,num =  10,  base  =  2)  
@@ -5508,7 +5508,7 @@ print a
 
 输出如下：
 
-```
+```py
 [ 2.     4.     8.    16.    32.    64.   128.   256.    512.   1024.]
 
 ```
@@ -5524,7 +5524,7 @@ print a
 
 ###  示例 1
 
-```
+```py
 import numpy as np
 a = np.arange(10)
 s = slice(2,7,2)  
@@ -5533,7 +5533,7 @@ print a[s]
 
 输出如下：
 
-```
+```py
 [2  4  6]
 
 ```
@@ -5544,7 +5544,7 @@ print a[s]
 
 ###  示例 2
 
-```
+```py
 import numpy as np
 a = np.arange(10)
 b = a[2:7:2]  
@@ -5553,7 +5553,7 @@ print b
 
 输出如下：
 
-```
+```py
 [2  4  6]
 
 ```
@@ -5562,7 +5562,7 @@ print b
 
 ###  示例 3
 
-```
+```py
 # 对单个元素进行切片  
 import numpy as np
 
@@ -5573,14 +5573,14 @@ print b
 
 输出如下：
 
-```
+```py
 5
 
 ```
 
 ###  示例 4
 
-```
+```py
 # 对始于索引的元素进行切片  
 import numpy as np
 a = np.arange(10)  
@@ -5589,14 +5589,14 @@ print a[2:]
 
 输出如下：
 
-```
+```py
 [2  3  4  5  6  7  8  9]
 
 ```
 
 ###  示例 5
 
-```
+```py
 # 对索引之间的元素进行切片  
 import numpy as np
 a = np.arange(10)  
@@ -5605,7 +5605,7 @@ print a[2:5]
 
 输出如下：
 
-```
+```py
 [2  3  4]
 
 ```
@@ -5614,7 +5614,7 @@ print a[2:5]
 
 ###  示例 6
 
-```
+```py
 import numpy as np
 a = np.array([[1,2,3],[3,4,5],[4,5,6]])  
 print a
@@ -5625,7 +5625,7 @@ print a[1:]
 
 输出如下：
 
-```
+```py
 [[1 2 3]
  [3 4 5]
  [4 5 6]]
@@ -5640,7 +5640,7 @@ print a[1:]
 
 ###  示例 7
 
-```
+```py
 # 最开始的数组  
 import numpy as np
 a = np.array([[1,2,3],[3,4,5],[4,5,6]])  
@@ -5662,7 +5662,7 @@ print a[...,1:]
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[1 2 3]
  [3 4 5]
@@ -5696,7 +5696,7 @@ print a[...,1:]
 
 ### # 示例 1
 
-```
+```py
 import numpy as np 
 
 x = np.array([[1,  2],  [3,  4],  [5,  6]]) 
@@ -5706,7 +5706,7 @@ print y
 
 输出如下：
 
-```
+```py
 [1  4  5]
 
 ```
@@ -5718,7 +5718,7 @@ print y
 
 ### # 示例 2
 
-```
+```py
 import numpy as np 
 x = np.array([[  0,  1,  2],[  3,  4,  5],[  6,  7,  8],[  9,  10,  11]])  
 print  '我们的数组是：'  
@@ -5733,7 +5733,7 @@ print y
 
 输出如下：
 
-```
+```py
 我们的数组是：                                                                 
 [[ 0  1  2]                                                                   
  [ 3  4  5]                                                                   
@@ -5752,7 +5752,7 @@ print y
 
 ### # 示例 3
 
-```
+```py
 import numpy as np 
 x = np.array([[  0,  1,  2],[  3,  4,  5],[  6,  7,  8],[  9,  10,  11]])  
 print  '我们的数组是：'  
@@ -5771,7 +5771,7 @@ print y
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[ 0  1  2] 
  [ 3  4  5] 
@@ -5798,7 +5798,7 @@ print y
 
 这个例子中，大于 5 的元素会作为布尔索引的结果返回。
 
-```
+```py
 import numpy as np 
 x = np.array([[  0,  1,  2],[  3,  4,  5],[  6,  7,  8],[  9,  10,  11]])  
 print  '我们的数组是：'  
@@ -5811,7 +5811,7 @@ print x[x >  5]
 
 输出如下：
 
-```
+```py
 我们的数组是：
 [[ 0  1  2] 
  [ 3  4  5] 
@@ -5827,7 +5827,7 @@ print x[x >  5]
 
 这个例子使用了`~`（取补运算符）来过滤`NaN`。
 
-```
+```py
 import numpy as np 
 a = np.array([np.nan,  1,2,np.nan,3,4,5])  
 print a[~np.isnan(a)]
@@ -5835,7 +5835,7 @@ print a[~np.isnan(a)]
 
 输出如下：
 
-```
+```py
 [ 1.   2.   3.   4.   5.] 
 
 ```
@@ -5844,7 +5844,7 @@ print a[~np.isnan(a)]
 
 以下示例显示如何从数组中过滤掉非复数元素。
 
-```
+```py
 import numpy as np 
 a = np.array([1,  2+6j,  5,  3.5+5j])  
 print a[np.iscomplex(a)]
@@ -5852,7 +5852,7 @@ print a[np.iscomplex(a)]
 
 输出如下：
 
-```
+```py
 [2.0+6.j  3.5+5.j] 
 
 ```
