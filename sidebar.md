@@ -45,7 +45,7 @@
     +   [零、前言](docs/master-num-comp-numpy/0.md)
     +   [一、使用 NumPy 数组](docs/master-num-comp-numpy/1.md)
     +   [二、NumPy 线性代数](docs/master-num-comp-numpy/2.md)
-    +   [三、使用 NumPy 统计功能对波士顿住房数据进行探索性数据分析](docs/master-num-comp-numpy/3.md)
+    +   [三、使用 NumPy 统计函数对波士顿住房数据进行探索性数据分析](docs/master-num-comp-numpy/3.md)
     +   [四、使用线性回归预测房价](docs/master-num-comp-numpy/4.md)
     +   [五、使用 NumPy 对批发分销商的客户进行聚类](docs/master-num-comp-numpy/5.md)
     +   [六、NumPy，SciPy，Pandas 和 Scikit-Learn](docs/master-num-comp-numpy/6.md)
