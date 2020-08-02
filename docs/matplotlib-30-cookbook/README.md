@@ -4,7 +4,7 @@
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 > 
-> 不要担心自己的形象，只关心如何实现目标。--《原则》，生活原则 2.3.c
+> 不要担心自己的形象，只关心如何实现目标。——《原则》，生活原则 2.3.c
 
 * [在线阅读](https://ds.apachecn.org)
 * [ApacheCN 面试求职交流群 724187166](https://jq.qq.com/?_wv=1027&k=54ujcL3)
