@@ -14,6 +14,17 @@
 +   [Sklearn 秘籍](docs/sklearn-cookbook/README.md)
 +   [Sklearn 学习指南](docs/learning-sklearn/README.md)
 
+## 下载
+
+### NPM
+
+```
+npm install -g apachecn-ds-zh
+apachecn-ds-zh <port>
+' + 
+                '# 访问 http://localhost:{port} 查看文档
+```
+
 ## 贡献指南
 
 本项目需要校对，欢迎大家提交 Pull Request。
