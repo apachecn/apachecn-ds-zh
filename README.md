@@ -1,4 +1,4 @@
-# ApacheCN 数据科学译文集
+# ApacheCN 数据科学和机器学习译文集
 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 > 
