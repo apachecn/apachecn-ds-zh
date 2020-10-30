@@ -321,3 +321,4 @@
     +   [四、神经网络和深度学习](docs/ml-for-humans/4.md)
     +   [五、强化学习](docs/ml-for-humans/5.md)
     +   [六、最好的机器学习资源](docs/ml-for-humans/6.md)
++   [机器学习超级复习笔记](super-machine-learning-revision-notes)
