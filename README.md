@@ -1,4 +1,4 @@
-# ApacheCN 数据科学译文集
+# ApacheCN 数据科学和机器学习译文集
 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 > 
@@ -10,9 +10,31 @@
 
 ## 目录
 
++   [TutorialsPoint NumPy 教程](docs/tutorialspoint-numpy.md)
++   [NumPy 秘籍中文第二版](docs/numpy-cookbook-2e/README.md)
++   [NumPy 初学者指南中文第三版](docs/numpy-beginners-guide-3e/README.md)
++   [NumPy 基础知识](docs/numpy-essentials/README.md)
++   [精通 NumPy 数值分析](docs/master-num-comp-numpy/README.md)
++   [NumPy 数组学习手册](docs/learn-numpy-array/README.md)
++   [精通 SciPy](docs/master-scipy/README.md)
 +   [Pandas 秘籍](docs/pandas-cookbook/README.md)
++   [Pandas 学习手册中文第二版](docs/learning-pandas-2e/README.md)
++   [精通 Pandas](docs/master-pandas/README.md)
++   [NumPy 和 Pandas 数据分析实用指南](docs/handson-data-analysis-numpy-pandas/README.md)
++   [精通 Pandas 探索性分析](docs/master-exp-analysis-pandas/README.md)
++   [Matplotlib 3.0 秘籍](docs/matplotlib-30-cookbook/README.md)
++   [Matplotlib 绘图秘籍](docs/matplotlib-plot-cookbook/README.md)
 +   [Sklearn 秘籍](docs/sklearn-cookbook/README.md)
-+   [Sklearn 学习指南](docs/learning-sklearn/README.md)
++   [Sklearn 学习手册](docs/learning-sklearn/README.md)
++   [UCSD COGS108 数据科学实战中文笔记](docs/ucsd-cogs108-notes/README.md)
++   [USF MSDS501 计算数据科学中文讲义](docs/usf-msds501-notes/README.md)
++   [fast.ai 数值线性代数讲义中文版 v2](docs/fastai-num-linalg-v2/README.md)
++   [SciPyCon 2018 sklearn 教程](docs/scipycon-2018-sklearn-tut/README.md)
++   [社交媒体挖掘](docs/social-media-mining/README.md)
++   [Python 机器学习在线指南](docs/vt-cs4624-pyml/README.md)
++   [数据科学和人工智能技术笔记](docs/ds-ai-tech-notes/README.md)
++   [写给人类的机器学习](docs/ml-for-humans/README.md)
++   [机器学习超级复习笔记](docs/super-machine-learning-revision-notes/README.md)
 
 ## 下载
 
