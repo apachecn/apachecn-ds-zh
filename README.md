@@ -2,7 +2,7 @@
 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 > 
-> 不要担心自己的形象，只关心如何实现目标。——《原则》，生活原则 2.3.c
+> 最好的选择是好处多于坏处的选择，不是毫无坏处的选择。——《原则》，生活原则 5.6.c
 
 * [在线阅读](https://ds.apachecn.org)
 * [在线阅读（Gitee）](https://apachecn.gitee.io/apachecn-ds-zh/)
