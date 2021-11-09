@@ -40,6 +40,7 @@
 +   [精通 Python 数据科学](docs/master-py-ds/SUMMARY.md)
 +   [Python 数据科学本质论](docs/py-ds-essentials/SUMMARY.md)
 +   [数据科学思想](docs/thoughtful-ds/SUMMARY.md)
++   [Python 仿真建模实用指南](docs/handson-simu-mod-py/SUMMARY.md)
 
 ## 下载
 
