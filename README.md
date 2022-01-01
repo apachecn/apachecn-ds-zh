@@ -14,7 +14,6 @@
 +   [计算与推断思维](docs/data8-textbook-zh/SUMMARY.md)
 +   [利用 Python 进行数据分析 · 第 2 版](docs/pyda-2e-zh/SUMMARY.md)
 +   [Python 自然语言处理 第二版](docs/nlp-py-2e/SUMMARY.md)
-+   [复杂性思维 中文第二版](docs/think-comp-2e-zh/SUMMARY.md)
 +   [TutorialsPoint NumPy 教程](docs/tutorialspoint-numpy.md)
 +   [NumPy 秘籍中文第二版](docs/numpy-cookbook-2e/SUMMARY.md)
 +   [NumPy 初学者指南中文第三版](docs/numpy-beginners-guide-3e/SUMMARY.md)
@@ -29,7 +28,6 @@
 +   [精通 Pandas 探索性分析](docs/master-exp-analysis-pandas/SUMMARY.md)
 +   [UCSD COGS108 数据科学实战中文笔记](docs/ucsd-cogs108-notes/SUMMARY.md)
 +   [USF MSDS501 计算数据科学中文讲义](docs/usf-msds501-notes/SUMMARY.md)
-+   [fast.ai 数值线性代数讲义中文版 v2](docs/fastai-num-linalg-v2/SUMMARY.md)
 +   [社交媒体挖掘](docs/social-media-mining/SUMMARY.md)
 +   [数据科学和人工智能技术笔记](docs/ds-ai-tech-notes/SUMMARY.md)
 +   [Python 和 Jupyter 机器学习入门](docs/begin-ds-py-jupyter/SUMMARY.md)
@@ -37,7 +35,6 @@
 +   [精通 Python 数据科学](docs/master-py-ds/SUMMARY.md)
 +   [Python 数据科学本质论](docs/py-ds-essentials/SUMMARY.md)
 +   [数据科学思想](docs/thoughtful-ds/SUMMARY.md)
-+   [Python 仿真建模实用指南](docs/handson-simu-mod-py/SUMMARY.md)
 
 ## 下载
 
