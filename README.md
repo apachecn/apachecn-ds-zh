@@ -33,6 +33,9 @@
 +   [精通 Python 数据科学](docs/master-py-ds/SUMMARY.md)
 +   [Python 数据科学本质论](docs/py-ds-essentials/SUMMARY.md)
 +   [数据科学思想](docs/thoughtful-ds/SUMMARY.md)
++   [数据科学实战秘籍](docs/prac-ds-cb/SUMMARY.md)
++   [时间序列分析实战](docs/prac-ts-anal/SUMMARY.md)
++   [Python 真实世界的数据科学](docs/py-real-world-ds/SUMMARY.md)
 
 <!--
 无需翻译：
