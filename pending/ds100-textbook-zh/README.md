@@ -19,7 +19,7 @@
 
 ### Docker
 
-```
+```py
 docker pull apachecn0/ds100-textbook-zh
 docker run -tid -p <port>:80 apachecn0/ds100-textbook-zh
 # 访问 http://localhost:{port} 查看文档
@@ -27,7 +27,7 @@ docker run -tid -p <port>:80 apachecn0/ds100-textbook-zh
 
 ### PYPI
 
-```
+```py
 pip install ds100-textbook-zh
 ds100-textbook-zh <port>
 # 访问 http://localhost:{port} 查看文档
@@ -35,7 +35,7 @@ ds100-textbook-zh <port>
 
 ### NPM
 
-```
+```py
 npm install -g dsyilingling-textbook-zh
 dsyilingling-textbook-zh <port>
 # 访问 http://localhost:{port} 查看文档
