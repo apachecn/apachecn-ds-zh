@@ -4,6 +4,8 @@
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 > 
+> 阶段：机翻（1）
+> 
 > 理论上，理论和实践是没有差异的。但实践中，是有的。——Jan L. A. van de Snepscheut
 
 * [在线阅读](https://ds100.apachecn.org)
