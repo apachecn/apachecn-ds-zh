@@ -1,4 +1,4 @@
-# 第 4 部分。课程模块 4：机器学习
+# 第四部分：机器学习
 
 ![Course Module 4: Machine Learning](img/TOC_4a.jpg)
 

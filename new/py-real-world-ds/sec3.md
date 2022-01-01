@@ -1,4 +1,4 @@
-# 第 3 部分。课程模块 3：数据挖掘
+# 第三部分：数据挖掘
 
 ![Course Module 3: Data Mining](img/TOC_3a.jpg)
 
