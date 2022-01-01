@@ -20,7 +20,6 @@
 +   [NumPy 基础知识](docs/numpy-essentials/SUMMARY.md)
 +   [精通 NumPy 数值分析](docs/master-num-comp-numpy/SUMMARY.md)
 +   [NumPy 数组学习手册](docs/learn-numpy-array/SUMMARY.md)
-+   [精通 SciPy](docs/master-scipy/SUMMARY.md)
 +   [Pandas 秘籍](docs/pandas-cookbook/SUMMARY.md)
 +   [Pandas 学习手册中文第二版](docs/learning-pandas-2e/SUMMARY.md)
 +   [精通 Pandas](docs/master-pandas/SUMMARY.md)
