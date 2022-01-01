@@ -11,9 +11,12 @@
 
 ## 目录
 
++   [UCB DS100 数据科学的原理与技巧](docs/ds100-textbook-zh/SUMMARY.md)
++   [UCB Prob140 面向数据科学的概率论](docs/prob140-textbook-zh/SUMMARY.md)
 +   [计算与推断思维](docs/data8-textbook-zh/SUMMARY.md)
 +   [利用 Python 进行数据分析 · 第 2 版](docs/pyda-2e-zh/SUMMARY.md)
 +   [Python 自然语言处理 第二版](docs/nlp-py-2e/SUMMARY.md)
++   [斯坦福 Stats60 21 世纪的统计思维](docs/stats-thinking-21-zh/SUMMARY.md)
 +   [TutorialsPoint NumPy 教程](docs/tutorialspoint-numpy.md)
 +   [NumPy 秘籍中文第二版](docs/numpy-cookbook-2e/SUMMARY.md)
 +   [NumPy 初学者指南中文第三版](docs/numpy-beginners-guide-3e/SUMMARY.md)
