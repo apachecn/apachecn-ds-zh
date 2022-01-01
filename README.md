@@ -31,7 +31,6 @@
 +   [社交媒体挖掘](docs/social-media-mining/SUMMARY.md)
 +   [数据科学和人工智能技术笔记](docs/ds-ai-tech-notes/SUMMARY.md)
 +   [Python 和 Jupyter 数据科学入门](docs/begin-ds-py-jupyter/SUMMARY.md)
-+   [Python 数据科学和机器学习实践指南](docs/handson-ds-py-ml/SUMMARY.md)
 +   [精通 Python 数据科学](docs/master-py-ds/SUMMARY.md)
 +   [Python 数据科学本质论](docs/py-ds-essentials/SUMMARY.md)
 +   [数据科学思想](docs/thoughtful-ds/SUMMARY.md)
