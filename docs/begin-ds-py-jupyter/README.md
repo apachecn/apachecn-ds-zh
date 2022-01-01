@@ -1,4 +1,4 @@
-# Python 和 Jupyter 机器学习入门
+# Python 和 Jupyter 数据科学入门
 
 > 原文：[Beginning Data Science with Python and Jupyter](https://www.bookzz.ren/bookzz/3610112/75a879)
 > 

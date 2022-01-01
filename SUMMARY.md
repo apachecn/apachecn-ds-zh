@@ -258,7 +258,7 @@
     +   [十九、数据整理（下）](docs/ds-ai-tech-notes/19.2.md)
     +   [二十、数据可视化](docs/ds-ai-tech-notes/20.md)
     +   [二十一、统计学](docs/ds-ai-tech-notes/21.md)
-+   [Python 和 Jupyter 机器学习入门](docs/begin-ds-py-jupyter/README.md)
++   [Python 和 Jupyter 数据科学入门](docs/begin-ds-py-jupyter/README.md)
     +   [零、前言](docs/begin-ds-py-jupyter/0.md)
     +   [一、Jupyter 基础知识](docs/begin-ds-py-jupyter/1.md)
     +   [二、数据清理和高级机器学习](docs/begin-ds-py-jupyter/2.md)
