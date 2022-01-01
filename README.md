@@ -34,6 +34,13 @@
 +   [Python 数据科学本质论](docs/py-ds-essentials/SUMMARY.md)
 +   [数据科学思想](docs/thoughtful-ds/SUMMARY.md)
 
+<!--
+无需翻译：
+
+Data Analysis with Python
+Data Science with Python
+-->
+
 ## 下载
 
 ### Docker
