@@ -3,6 +3,8 @@
 ![](cover.jpg)
 
 > 译者：[SeanCheney](https://github.com/iamseancheney)
+>
+> 阶段：精细校对（4）
 > 
 > 卑鄙是卑鄙者的通行证，高尚是高尚者的墓志铭。——北岛
 
