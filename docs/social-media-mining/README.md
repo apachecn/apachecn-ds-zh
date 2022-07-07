@@ -1,11 +1,9 @@
 # <center>社交媒体挖掘 - 翻译版</center>
 
-<center>寻找互联网数据中的故事</center>
-<center>Lam Thuy Vo</center>
+寻找互联网数据中的故事
+Lam Thuy Vo
 
-<center><img src="docs/img/media/image1.jpeg" alt="San Francisco" /></center>
-
-<center>
+<img src="docs/img/media/image1.jpeg" alt="San Francisco" />
 
 **中文译者：徐柳青**
 
@@ -13,9 +11,7 @@
 
 **电话：18616020096**
 
-阶段：简单校对（2）    
-    
-</center>
+阶段：简单校对（2）   
 
 概要
 ----
