@@ -3,6 +3,8 @@
 > 原文：[Mastering Pandas](https://b-ok.global/book/3297097/39a36c)
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+>
+> 阶段：简单校对（2）
 > 
 > 不要担心自己的形象，只关心如何实现目标。——《原则》，生活原则 2.3.c
 
