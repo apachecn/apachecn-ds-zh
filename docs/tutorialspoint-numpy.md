@@ -5,6 +5,8 @@
 > 译者：[飞龙](https://github.com/)
 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+>
+> 阶段：精细校对（4）
 
 + [在线阅读](https://www.gitbook.com/book/wizardforcel/ts-numpy-tut/details)
 + [PDF格式](https://www.gitbook.com/download/pdf/book/wizardforcel/ts-numpy-tut)
