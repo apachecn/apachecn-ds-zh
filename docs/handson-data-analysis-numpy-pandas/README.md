@@ -3,6 +3,8 @@
 > 原文：[Hands-On Data Analysis with NumPy and pandas](https://b-ok.cc/book/3630898/69a204)
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+>
+> 阶段：简单校对（2）
 > 
 > 不要担心自己的形象，只关心如何实现目标。——《原则》，生活原则 2.3.c
 
