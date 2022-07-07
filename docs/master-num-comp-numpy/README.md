@@ -3,6 +3,8 @@
 > 原文：[Mastering Numerical Computing With NumPy](https://libgen.lc/item/index.php?md5=EE7B22E813F3F45D37C4603107FDD752)
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+>
+> 阶段：简单校对（2）
 > 
 > 不要担心自己的形象，只关心如何实现目标。——《原则》，生活原则 2.3.c
 
