@@ -3,6 +3,8 @@
 > 原文：[Beginning Data Science with Python and Jupyter](https://www.bookzz.ren/bookzz/3610112/75a879)
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+>
+> 阶段：简单校对（2）
 > 
 > 不要担心自己的形象，只关心如何实现目标。——《原则》，生活原则 2.3.c
 
