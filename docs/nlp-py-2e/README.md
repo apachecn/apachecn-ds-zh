@@ -5,6 +5,8 @@
 > 作者：**Steven Bird, Ewan Klein 和 Edward Loper**
 > 
 > 译者：[Python 文档协作翻译小组](http://usyiyi.cn/translate/nltk_python/index.html)
+>
+> 阶段：精细校对（4）
 > 
 > 最后更新：2017.3.4
 > 
